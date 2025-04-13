@@ -218,11 +218,11 @@ def evaluate_model(model, ARCHITECTURE, test_loader, device):
 if __name__ == '__main__':
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-    IMAGES_PATH = "/workspaces/cmp9137-advanced-machine-learning/CMP9137 Advanced Machine Learning/ITM_Classifier-baselines/visual7w-images"
-    train_data_file = "/workspaces/cmp9137-advanced-machine-learning/CMP9137 Advanced Machine Learning/ITM_Classifier-baselines/visual7w-text/v7w.TrainImages.itm.txt"
-    dev_data_file = "/workspaces/cmp9137-advanced-machine-learning/CMP9137 Advanced Machine Learning/ITM_Classifier-baselines/visual7w-text/v7w.DevImages.itm.txt"
-    test_data_file = "/workspaces/cmp9137-advanced-machine-learning/CMP9137 Advanced Machine Learning/ITM_Classifier-baselines/visual7w-text/v7w.TestImages.itm.txt"
-    sentence_embeddings_file = "/workspaces/cmp9137-advanced-machine-learning/CMP9137 Advanced Machine Learning/ITM_Classifier-baselines/v7w.sentence_embeddings-gtr-t5-large.pkl"
+    IMAGES_PATH = "/workspaces/ml-assesment/Task 1/ITM_Classifier-baselines/visual7w-images"
+    train_data_file = "/workspaces/ml-assesment/Task 1/ITM_Classifier-baselines/visual7w-text/v7w.TestImages.itm.txt"
+    dev_data_file = "/workspaces/ml-assesment/Task 1/ITM_Classifier-baselines/visual7w-text/v7w.DevImages.itm.txt"
+    test_data_file = "/workspaces/ml-assesment/Task 1/ITM_Classifier-baselines/visual7w-text/v7w.TestImages.itm.txt"
+    sentence_embeddings_file = "/workspaces/ml-assesment/Task 1/ITM_Classifier-baselines/v7w.sentence_embeddings-gtr-t5-large.pkl"
 
     sentence_embeddings = load_sentence_embeddings(sentence_embeddings_file)
 
