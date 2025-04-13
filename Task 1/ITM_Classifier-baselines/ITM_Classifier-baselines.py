@@ -232,12 +232,12 @@ if __name__ == '__main__':
     train_loader = DataLoader(train_dataset, batch_size=20, shuffle=True)
     test_loader = DataLoader(test_dataset, batch_size=120, shuffle=False)
 
-    model = ITM_Model(num_classes=2, ARCHITECTURE="CNN", PRETRAINED=True).to(device)
+    model = ITM_Model(num_classes=2, ARCHITECTURE="ViT", PRETRAINED=True).to(device)
     criterion = nn.CrossEntropyLoss()
     optimiser = optim.AdamW(model.parameters(), lr=3e-5, weight_decay=1e-4)
 
-    train_model(model, "CNN", train_loader, criterion, optimiser, num_epochs=10)
-    evaluate_model(model, "CNN", test_loader, device)
+    train_model(model, "ViT", train_loader, criterion, optimiser, num_epochs=10)
+    evaluate_model(model, "ViT", test_loader, device)
 
 
 
