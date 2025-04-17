@@ -28,7 +28,7 @@
 # - Function train_model trains/finetunes one of two possible models: CNN or ViT. The CNN 
 #   model is based on resnet18, and the Vision Transformer (ViT) is based on vit_b_32.
 # - Function evaluate_model() calculates the accuracy of the selected model using test data. 
-# - The last block of code brings everything together calling all classes & functions above. 
+# - The last block of code brings everything together calling all classes & functions above.
 # 
 # info of resnet18: https://pytorch.org/vision/main/models/resnet.html
 # info of vit_b_32: https://pytorch.org/vision/main/models/vision_transformer.html
