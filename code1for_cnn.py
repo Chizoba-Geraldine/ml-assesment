@@ -202,7 +202,7 @@ class ITM_Model(nn.Module):
         output = self.fc(combined_features)
         return output
 
-def train_model(model, ARCHITECTURE, train_loader, criterion, optimiser, num_epochs=50):
+def train_model(model, ARCHITECTURE, train_loader, criterion, optimiser, num_epochs=40):
     print(f'TRAINING %s model' % (ARCHITECTURE))
     model.train()
 
