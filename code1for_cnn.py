@@ -324,6 +324,6 @@ if __name__ == '__main__':
     criterion = nn.CrossEntropyLoss()
     optimiser = torch.optim.AdamW(model.parameters(), lr=3e-5, weight_decay=1e-4)
 
-    train_model(model, MODEL_ARCHITECTURE, train_loader, criterion, optimiser, num_epochs=50)
+    train_model(model, MODEL_ARCHITECTURE, train_loader, criterion, optimiser, num_epochs=40)
     evaluate_model(model, MODEL_ARCHITECTURE, test_loader, device)
 
